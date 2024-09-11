@@ -12,6 +12,8 @@ public class Kafe11 {
         float diskon=10/100f; 
         double totalharga, nominalbayar;
 
+        System.out.println("value dari diskon : " +diskon);
+
         Scanner pilihan = new Scanner(System.in);
 
         System.out.print("Masukan keanggotaan(True/False) : ");
@@ -29,10 +31,14 @@ public class Kafe11 {
         totalharga = (jmlteh*hargateh + jlmkopi*hargakopi + jlmroti*hargaroti);
 
         nominalbayar = totalharga - (totalharga*diskon);
+        int nominalint =((int)nominalbayar);
+        byte totalbyte = ((byte)nominalbayar);
 
         System.out.println("Keanggotaan Pelanggan : "+keanggotaan);
         System.out.println("Item Pembelian : "+jlmkopi +" kopi "+jmlteh+" Teh "+jlmroti + " roti ");
         System.out.println("Nominal Bayar Rp "+nominalbayar);
+        System.out.println("Nominal Bayar(int) Rp "+nominalint);
+        System.out.println("Nominal Bayar(total byte) Rp "+totalbyte);
 
 
 
